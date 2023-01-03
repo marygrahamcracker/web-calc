@@ -5,7 +5,7 @@
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "http-server ./ --port 8087 -c-1 --cors"
+    "start": "http-server -p 8087 -c-1 --cors"
   },
   "author": "",
   "license": "ISC",
