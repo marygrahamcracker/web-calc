@@ -1,35 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Calculator</title>
-        <link href="styles.css" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet" />
+        <script src="https://unpkg.com/js-big-decimal@1.3.1/dist/web/js-big-decimal.min.js"></script>
         <script src="index.js" defer></script>
         <link rel="shortcut icon" type="image/ico" href="/favicon.ico" />
     </head>
     <body>
-        <div class="calculator-grid"> 
+        <div class="calculator-grid">
             <input type="text" readonly class="calculator-text" id="txtResults" />  
-            <button class="span-AC" onclick="acClick()">AC</button>
-            <button class="span-DEL" onclick="delClick()">DEL</button>
-            <button class="span-one" onclick="numberClick(1)">1</button>
-            <button class="span-one" onclick="numberClick(2)">2</button>
-            <button class="span-one" onclick="numberClick(3)">3</button>
-            <button class="span-one" onclick="numberClick(4)">4</button>
-            <button class="span-one" onclick="numberClick(5)">5</button>
-            <button class="span-one" onclick="numberClick(6)">6</button>
-            <button class="span-one" onclick="numberClick(7)">7</button>
-            <button class="span-one" onclick="numberClick(8)">8</button>
-            <button class="span-one" onclick="numberClick(9)">9</button>
-            <button class="span-one" onclick="numberClick(0)">0</button>
-            <button class="span-one" onclick="addClick()">+</button>
-            <button class="span-one" onclick="minusClick()">-</button>
-            <button class="span-one" onclick="timesClick()">x</button>
-            <button class="span-one" onclick="divideClick()">÷</button>
-            <button class="span-one" onclick="decimalClick()">.</button>
-            <button class="span-one" onclick="equalClick()">=</button>
+            <button id="data-all-clear" class="span-AC" onclick="acClick()">AC</button>
+            <button id="data-delete" class="span-DEL" onclick="delClick()">DEL</button>
+            <button id="data-number-1" class="span-one" onclick="numberClick(1)">1</button>
+            <button id="data-number-2" class="span-one" onclick="numberClick(2)">2</button>
+            <button id="data-number-3" class="span-one" onclick="numberClick(3)">3</button>
+            <button id="data-number-4" class="span-one" onclick="numberClick(4)">4</button>
+            <button id="data-number-5" class="span-one" onclick="numberClick(5)">5</button>
+            <button id="data-number-6" class="span-one" onclick="numberClick(6)">6</button>
+            <button id="data-number-7" class="span-one" onclick="numberClick(7)">7</button>
+            <button id="data-number-8" class="span-one" onclick="numberClick(8)">8</button>
+            <button id="data-number-0" class="span-one" onclick="numberClick(9)">9</button>
+            <button id="data-number-0" class="span-one" onclick="numberClick(0)">0</button>
+            <button id="data-operation" class="span-one" onclick="addClick()">+</button>
+            <button id="data-operation-minus" class="span-one" onclick="minusClick()">-</button>
+            <button id="data-operation-multiply" class="span-one" onclick="timesClick()">x</button>
+            <button id="data-operation-division" class="span-one" onclick="divideClick()">÷</button>
+            <button id="data-number-decimal" class="span-one" onclick="decimalClick()">.</button>
+            <button id="data-equals" class="span-one" onclick="equalClick()">=</button>
         </div>
     </body>
 </html>
